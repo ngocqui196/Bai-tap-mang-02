@@ -22,18 +22,18 @@
  // }
  // document.write(num.join());
 
-    let a = "c"
+    const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const LOWER = 'abcdefghijklmnopqrstuvwxyz';
     let arr = "jYmnGjGkGHbn";
     let  x = [];
     for  (let i = 0; i < arr.length; i ++) {
-        if (arr.includes(a[i])) {
-            x.push(a[i].toLowerCase());
-        } else  {
-            x.push(a[i].toUpperCase());
+        if (LOWER.includes(arr[i])) {
+            x.push(arr[i].toUpperCase());
+        } else if (UPPER.includes(arr[i])) {
+            x.push(arr[i].toLowerCase());
         }
-
     }
-    document.write(x)
+    document.write(x.join(''))
 </Script>
 </body>
 </html>
